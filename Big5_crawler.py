@@ -7,6 +7,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import StandardScaler
+import os as os
+
+
+
+os.environ['http_proxy'] = 'http://proxy.ifmo.ru:3128'
 
 # df = pd.read_csv("big5_users.tsv", sep='\t')
 df = pd.read_excel("big5_main.xlsx")
